@@ -36,12 +36,20 @@ To use the OpenGL library, you must run the following command lines:
 
 ## Region Filling
 
+The Region Filling file ("preenchimento.cpp", in brazilian portuguese) is made with a 32-bits image of a dinosaur. I made it on Excel because it's easier to count the bits and transform them to hexadecimal. By the way, you can do the same with whatever image you wanna create, just remember to start the GLUbyte vector from the bottom of the image!
+
+I used variables to define the colors and coordinates of my region. Also created variables for scaling the region as the user extends the window. 
+
+In the mouse function, is defined that, when the user clicks INSIDE the region, it will randomly change the color of the region. 
 
 ## Geometric Transformations
 
+Here, I created a pacman controlled by the keyboard direction keys. Pretty nice imo.
 
 ## Animations
 
+Here, I used the pacman I've created before to walk all by himself.
 
 ## Lighting
 
+Ngl, this one is particularly difficult. But I basically created a 3D rectangle in which you can control the lighting through the keys 'a' and 'b'.
