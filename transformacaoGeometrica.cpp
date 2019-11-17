@@ -108,124 +108,6 @@ glEnd();
 glFlush();
 glPopMatrix();
 
-//glColor4f(1.0, 1.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i = 105; i<180; i++){
-//     theta = i*3.142/90;
-//     glVertex2f(230+90*cos(theta), 360+80*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-
-//Bolinhas Vermelhas
-
-// glColor4f(1.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(300+10*cos(theta), 380+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-// glColor4f(1.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(350+10*cos(theta), 380+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-// glColor4f(1.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(400+10*cos(theta), 380+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-// glColor4f(1.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(450+10*cos(theta), 380+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-// glEnd();
-// glFlush();
-
-// glColor4f(1.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(500+10*cos(theta), 380+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-// glColor4f(1.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(550+10*cos(theta), 380+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-// glColor4f(1.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// //float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(600+10*cos(theta), 380+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
-}
-
-void olho() {
-
-// glColor4f(0.0, 0.0, 0.0, 0.5);
-
-// glBegin(GL_POLYGON);
-// float theta = 0;
-// for (int i =0; i<360; i++){
-//     theta = i*3.142/180;
-//     glVertex2f(280+10*cos(theta), 340+10*sin(theta));
-// }
-
-// glEnd();
-// glFlush();
-
 }
 
 void display(void)
@@ -235,44 +117,11 @@ void display(void)
 int i;
 glClear(GL_COLOR_BUFFER_BIT);
 
-// glPushMatrix();
-// glTranslatef(spin,0,0);
-// glRotatef(0, 0.0, 0.0, 1.0);
-//glTranslatef(-spin,0,0);
-// glTranslatef(-spin,360,0);
-
 pacman();
-//olho();
-//glPopMatrix();
+
 glutSwapBuffers();
 
 }
-
-// void mouse(int button, int state, int x, int y){
-//     switch (button){
-//         case GLUT_LEFT_BUTTON:
-//             if (state == GLUT_DOWN){
-//                // glutIdleFunc(spinDisplay);
-//             }
-//             break;
-//         case GLUT_MIDDLE_BUTTON:
-//             if (state == GLUT_DOWN){
-//                 // glutIdleFunc(NULL);
-//             }
-//             break;
-//         default:
-//         break;
-//     }
-// }
-
-// void spinDisplay(){
-//     abreEfecha();
-//     spin = spin + 2.0f;
-//     if (spin > 360){
-//         spin = spin - 600;
-//     }
-//     glutPostRedisplay();
-// }
 
 void reshape(int x, int y){
     glViewport(0, 0, (GLsizei) x, (GLsizei) y);
@@ -290,64 +139,13 @@ switch (key) {
 
     case 27: exit(0); break;
 
-    // case 'a':
-    //     abrirPacman();
-    // break;
-    case 32: 
-        // abreEfecha();
-    //    glutIdleFunc(abreEfecha);
-    break;
-
     }
 
 }
 
-// void abrirPacman(){
-
-    
-//      for (int i=0; i<66; i++){
-//         tamanho --;
-//         glutPostRedisplay();
-        
-//     }
- 
-// }
-
-// void fecharPacman() {
-        
-//        for (int i=0; i<63; i++){
-//             tamanho++;
-//             glutPostRedisplay();
-
-//         }
-
-// }
-
-// void abreEfecha(){
-
-//     if(fechar){
-
-//         tamanho = tamanho - 3;
-//         if(tamanho < 0){
-//             fechar = false;
-//         }
-//     }else{
-//         tamanho += 3;
-//         if(tamanho > 65){
-//             fechar = true;
-
-//         }
-//     }
-
-//     glutPostRedisplay();
-
-// }
-
 void specialInputDoTeclado(int key, int x, int y) {
     switch(key){
-        case GLUT_KEY_UP:
-            // tamanho = 65;
-            // anguloTotal = 360; 
+        case GLUT_KEY_UP 
             angle = 45;
             c_y += 3;
             if (c_y == 600){
@@ -372,8 +170,7 @@ void specialInputDoTeclado(int key, int x, int y) {
             break;
     
         case GLUT_KEY_LEFT:
-            // tamanho = 210;
-            // anguloTotal = 175;
+
             c_x-=3;
             if (c_x <= 0) {
                 c_x = 600;
