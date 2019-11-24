@@ -34,6 +34,12 @@ To use the OpenGL library, you must run the following command lines:
 
 - sudo ln -s /usr/lib/x86_64-linux-gnu/libGLU.a /usr/lib/libGLU.a
 
+To run your program, you must write the following command lines:
+
+g++ NameOfYourProgram.cpp -o NameOfYourProgram -lGL -lGLU -lglut 
+
+P.S.: Don't forget to write the libs in that particular order.
+
 ## Region Filling
 
 The Region Filling file ("preenchimento.cpp", in brazilian portuguese) is made with a 32-bits image of a dinosaur. I made it on Excel because it's easier to count the bits and transform them to hexadecimal. By the way, you can do the same with whatever image you wanna create, just remember to start the GLUbyte vector from the bottom of the image!
